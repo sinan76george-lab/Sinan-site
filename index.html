@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sinan | Web Designer & Learner</title>
-  <meta name="description" content="Sinan's personal portfolio – Web design learner, project builder, and creative explorer.">
+  <title>Sinan George Saeed | Web Enthusiast & Community Builder</title>
+  <meta name="description" content="Sinan George Saeed – Vancouver-based web creator, community builder, and lifelong learner.">
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Inter & Pacifico for stylish headings -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
@@ -127,68 +125,67 @@
       box-shadow: 0 4px 16px rgba(58,107,175,0.13);
       border: 5px solid #a4bfef;
     }
-    #about p {
-      font-size: 1.17rem;
+    #about-content {
       flex-basis: 340px;
-      margin: 0;
+      font-size: 1.16rem;
     }
-    #projects {
-      text-align: center;
+    .linkedin-link {
+      color: #0a66c2;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      margin-top: 0.7em;
     }
-    .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 2rem;
+    .linkedin-link i {
+      font-size: 1.3em;
     }
-    .project-card {
-      background: linear-gradient(120deg, #a4bfef 0%, #fff 100%);
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(58,107,175,0.09);
-      padding: 1.7rem 1.1rem;
-      width: 260px;
-      transition: transform 0.17s, box-shadow 0.17s;
-      position: relative;
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.9em 0 0 0;
     }
-    .project-card:hover {
-      transform: translateY(-7px) scale(1.03);
-      box-shadow: 0 8px 28px rgba(58,107,175,0.18);
+    .info-list li {
+      margin-bottom: 0.5em;
     }
-    .project-card i {
-      font-size: 2.3rem;
-      margin-bottom: 0.7rem;
+    .section-divider {
+      border: none;
+      border-top: 2px solid #e5eafc;
+      margin: 2.5em 0 2.5em 0;
+    }
+    .experience-list, .education-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.7em 0 0 0;
+    }
+    .experience-list li, .education-list li {
+      margin-bottom: 1.2em;
+      background: #ecf3fe;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(58,107,175,0.06);
+      font-size: 1.07em;
+    }
+    .exp-title {
+      font-weight: bold;
       color: #3a6baf;
     }
-    .project-card h3 {
-      font-size: 1.25rem;
-      margin: 0.3rem 0 0.6rem 0;
-      color: #285690;
+    .exp-org {
+      color: #333;
     }
-    .project-card p {
-      font-size: 1rem;
-      color: #444;
+    .exp-location {
+      color: #6a93cb;
+      font-size: 0.98em;
     }
-    /* Footer */
-    #footer {
-      background: #222;
-      color: #eee;
-      padding: 1.1rem 0 0.6rem 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-    .social-links {
-      margin-top: 0.3rem;
-    }
-    .social-links a {
-      color: #a4bfef;
-      margin: 0 0.5rem;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: color 0.2s;
-    }
-    .social-links a:hover {
-      color: #fff;
+    .values-section {
+      background: linear-gradient(120deg, #f0f6ff 60%, #fff 100%);
+      padding: 1.2em 1em;
+      border-radius: 16px;
+      margin-top: 1.2em;
+      box-shadow: 0 1px 6px rgba(58,107,175,0.07);
+      font-size: 1.07em;
+      color: #1e3350;
     }
     @media (max-width: 700px) {
       #about {
@@ -214,6 +211,9 @@
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#values">Values</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -222,7 +222,7 @@
   <section id="hero">
     <div class="hero-content">
       <h1>Hi, I'm Sinan <span style="font-size:0.6em;">👋</span></h1>
-      <p>Welcome to my portfolio! I’m passionate about <b>web design</b> and building creative projects. Join me as I learn, code, and grow in the digital world.</p>
+      <p>Web creator, community builder, and lifelong learner based in Vancouver, BC. Welcome to my digital space!</p>
       <a href="#contact"><button class="cta-btn"><i class="fas fa-envelope"></i> Contact Me</button></a>
     </div>
   </section>
@@ -230,14 +230,68 @@
   <!-- About Section -->
   <section id="about">
     <img src="CNIX3533.JPG" alt="Sinan Profile">
-    <div>
+    <div id="about-content">
       <h2>About Me</h2>
-      <p>
-        I’m Sinan, a web design enthusiast excited to blend creativity with technology. Whether it’s experimenting with new ideas or turning visions into real projects, I’m always learning step by step.<br><br>
-        <b>Skills:</b> HTML, CSS, JavaScript (learning!), Teamwork, Curiosity, Problem Solving.
-      </p>
+      <ul class="info-list">
+        <li><b>Location:</b> Vancouver, British Columbia, Canada</li>
+        <li><b>Education:</b> Simon Fraser University</li>
+        <li><b>Current Experience:</b> Kitsilano Neighbourhood House</li>
+      </ul>
+      <div style="margin-top:1em;">
+        I am passionate about connecting people, learning new technologies, and building projects that matter. My background combines community engagement with digital creativity.
+      </div>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/sinangeorgesaeed/" target="_blank"><i class="fab fa-linkedin"></i> Connect with me on LinkedIn</a>
     </div>
   </section>
+
+  <hr class="section-divider">
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li>
+        <span class="exp-title">Program Coordinator</span>
+        <span class="exp-org">at Kitsilano Neighbourhood House</span>
+        <div class="exp-location">Vancouver, BC | Community Engagement</div>
+        <div>
+          I help design and deliver programs that bring people together, support newcomers, foster learning, and build a stronger community. My work is rooted in inclusivity and empowerment.
+        </div>
+      </li>
+      <!-- You can add more roles here as you grow! -->
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="education-list">
+      <li>
+        <span class="exp-title">Simon Fraser University</span>
+        <div class="exp-location">Burnaby, BC</div>
+        <div>Bachelor’s Degree (details can be added)</div>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Values & Passions Section -->
+  <section id="values">
+    <h2>Values & Passions</h2>
+    <div class="values-section">
+      <ul>
+        <li><b>Community:</b> I believe in the power of connection and collaboration to make our world better.</li>
+        <li><b>Learning:</b> Every new project is a chance to grow. I embrace change and seek out challenges.</li>
+        <li><b>Creativity:</b> From web design to event planning, I love bringing ideas to life in fresh ways.</li>
+        <li><b>Empathy:</b> Listening deeply and supporting others is at the heart of both my tech and community work.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="section-divider">
 
   <!-- Projects Section -->
   <section id="projects">
@@ -270,7 +324,7 @@
       <i class="fas fa-paper-plane"></i> Email Me
     </a>
     <div class="social-links" style="margin-top:1.3rem;">
-      <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/sinangeorgesaeed/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
@@ -278,13 +332,12 @@
 
   <!-- Footer -->
   <footer id="footer">
-    <p>© 2025 Sinan. All rights reserved.</p>
+    <p>© 2025 Sinan George Saeed. All rights reserved.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/sinangeorgesaeed/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
 </body>
 </html>
-
